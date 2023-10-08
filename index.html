@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret Sitesi</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MirShop</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkımızda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünler
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Erkek</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Kadın</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Çocuk</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+                <button type="button" class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                   <div class="shoping-box d-flex justify-content-center align-items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="little-box">0</div>
+                   </div> 
+                  </button>
+              <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button id="searchBtn" class="btn btn-outline-danger" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<!-- ! CONTENT ALANI -->
+
+
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- <div class="col-4">
+            <div class="card boyut">
+                <img width="400px" height="400px" src="IMG-5008301475227681281.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Laptop</h5>
+                  <h5 class="card-price">25.000₺</h5>
+                  <a href="#" class="pozisyon btn btn-danger">Sepete Ekle</a>
+                </div>
+              </div>
+        </div> -->
+    </div>
+</div>
+
+
+<!-- ! MODAL -->
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl  modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Sepetteki Ürünler</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li class="modal-li list-unstyled">
+                <div class="ürün-bilgisi d-flex justify-content-around align-items-center">
+                    <div class="fotograf">
+                        <!-- <img width="200px" height="200px" id="ürün-img" src="IMG-5008301475227681281.webp" alt="">
+                    </div>
+                    <div class="baslik">Bilgisayar</div>
+                    <div class="butonlar">
+                       <button id="azalt" class="btn btn-danger">-</button>
+                       <span class="adet">1</span>
+                        <button id="arttir" class="btn btn-success">+</button>
+                       
+                    </div>
+                    <div class="fiyat">25.000₺</div>
+                    <div class="toplamFiyat">25.000₺</div> -->
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
